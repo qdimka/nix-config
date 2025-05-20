@@ -12,7 +12,6 @@
       neofetch.enable = true;
     };
     desktop = {
-      wayland.enable = true;
       hyprland.enable = true;
     };
   };

@@ -1,7 +1,18 @@
 {pkgs, ...}: {
   imports = [
-    ./wayland.nix
-    ./hyprland.nix
+    ./hyprland
+    ./kitty
+    ./waybar
+    ./bat.nix
+    ./cava.nix
+    ./clock-rs.nix
+    ./dunst.nix
+    ./eza.nix
+    ./firefox.nix
+    ./git.nix
+    ./rofi.nix
+    ./udiskie.nix
+    ./xdg.nix
   ];
 
   home.packages = with pkgs; [
