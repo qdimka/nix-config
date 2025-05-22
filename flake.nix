@@ -30,6 +30,7 @@
         "x86_64-darwin"
       ];
       forAllSystems = nixpkgs.lib.genAttrs systems;
+      pkgs = forAllSystems (system: import nixpkgs.legacyPackages.${system});
     in {
       packages =
         forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});

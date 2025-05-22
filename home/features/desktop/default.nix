@@ -9,7 +9,6 @@
     ./dunst.nix
     ./eza.nix
     ./firefox.nix
-    ./git.nix
     ./rofi.nix
     ./udiskie.nix
     ./xdg.nix

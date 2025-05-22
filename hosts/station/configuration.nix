@@ -65,6 +65,44 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
     git
+    clock-rs
+    # Applications
+    prismlauncher
+    kitty
+    libreoffice
+    nautilus
+    eog
+
+    # Desktop
+    catppuccin-cursors.mochaFlamingo
+    cliphist
+    hyprpicker
+    hyprshot
+    adwaita-icon-theme
+    swww
+    wf-recorder
+    wl-clipboard
+
+    # Development
+    # - Nix
+    nil
+    nixfmt-rfc-style
+
+    # Utils
+
+    # - Grep
+    fzf
+    ripgrep
+
+    # - Miscellaneous
+    dhcpcd
+    ethtool
+    home-manager
+    libnotify
+    libva
+    pipewire
+    swayidle
+    zoxide
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

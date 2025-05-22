@@ -1,3 +1,3 @@
-{
-  wayland.windowManager.hyprland.settings.monitor = ",preferred,auto,auto";
+{lib, ...}:{
+  wayland.windowManager.hyprland.settings.monitor = lib.mkDefault ",preferred,auto,auto";
 }
