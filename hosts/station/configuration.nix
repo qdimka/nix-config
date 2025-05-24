@@ -42,6 +42,18 @@
     LC_TIME = "ru_RU.UTF-8";
   };
 
+  fonts = {
+    enableDefaultPackages = true;
+
+    packages = with pkgs; [
+      corefonts
+      font-awesome
+      noto-fonts
+      nerd-fonts.hack
+      nerd-fonts.jetbrains-mono
+    ];
+  };
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -117,6 +129,10 @@
 
   # Enable the OpenSSH daemon.
   services.openssh = {
+    enable = true;
+  };
+
+  services.xrdp = {
     enable = true;
   };
 
