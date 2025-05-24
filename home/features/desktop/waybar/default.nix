@@ -17,6 +17,8 @@
         "pulseaudio"
         "memory"
         "cpu"
+        "bluetooth"
+        "network"
         "custom/sleep"
         "custom/reboot"
         "custom/shutdown"
@@ -76,6 +78,25 @@
         interval = 3;
         format = "<span font='Hack Nerd Font' color='#f5e0dc'></span>  <span rise='-200'>{usage}%</span>";
         tooltip = false;
+      };
+
+      bluetooth = {
+        format-on = "";
+        format-off = "!";
+        format-disabled = ""; # an empty format will hide the module
+        format-connected = " {num_connections}";
+        tooltip-format-connected = "{device_enumerate}";
+        tooltip-format-enumerate-connected = "{device_alias}\t{device_address}";
+      };
+
+      network = {
+        format-wifi = "{icon}";
+	      format-icons = ["󰤯" "󰤟" "󰤢" "󰤥" "󰤨"];
+        format-ethernet = "󰈀";
+        format-linked = "{ifname} 󰈀";
+        format-disconnected = "!󰤫";
+        tooltip-format = "{ifname} via {gwaddr}";
+        on-click = "~/.config/rofi/rofi-wifi-menu";
       };
 
       "custom/sleep" = {

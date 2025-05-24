@@ -9,3 +9,4 @@ waybar &
 dunst &
 sh $SCRIPTS/slideshow.sh &
 sh $SCRIPTS/power-management.sh &
+blueman-applet &
