@@ -10,10 +10,7 @@
       };
     };
   };
-  hardware.pulseaudio = {
-    enable = true;
-    package = pkgs.pulseaudioFull;
-  };
+
   services.blueman.enable = true;
 
   systemd.user.services.mpris-proxy = {
